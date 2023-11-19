@@ -24,6 +24,76 @@
   color: white;
 }
 
+/* Add Increase button */
+.plus-button {
+    background-color: #4CAF50; /* Adjust to match the exact green shade in the image */
+    border: none;
+    color: white;
+    padding: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 24px; /* Adjust size to match the image */
+    line-height: 35px; /* Centers the '+' vertically */
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow, adjust as needed */
+    position: relative; /* Needed for pseudo-elements */
+    overflow: hidden; /* Ensures no overflow for pseudo-elements */
+}
+
+
+
+.plus-button:before {
+    height: 2px; /* Plus sign thickness */
+    width: 50%; /* Plus sign length */
+    top: 50%;
+    left: 25%; /* Positions the horizontal line in the center */
+}
+
+.plus-button:after {
+    width: 2px; /* Plus sign thickness */
+    height: 50%; /* Plus sign length */
+    left: 50%;
+    top: 25%; /* Positions the vertical line in the center */
+}
+
+
+/* Add Decrease button */
+.decrease-button {
+    background-color: #E53935; /* Red background, adjust to match the exact shade in the image */
+    border: none;
+    color: white;
+    padding: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 24px; /* Adjust size to match the image */
+    line-height: 35px; /* Centers the '+' vertically */
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow, adjust as needed */
+    position: relative; /* Needed for pseudo-elements */
+    overflow: hidden; /* Ensures no overflow for pseudo-elements */
+}
+
+
+
+.decrease-button:before {
+    height: 2px; /* Plus sign thickness */
+    width: 50%; /* Plus sign length */
+    top: 50%;
+    left: 25%; /* Positions the horizontal line in the center */
+}
+
+.decrease-button:after {
+    width: 2px; /* Plus sign thickness */
+    height: 50%; /* Plus sign length */
+    left: 50%;
+    top: 25%; /* Positions the vertical line in the center */
+}
+
+
+
+
 .App-link {
   color: #61dafb;
 }
